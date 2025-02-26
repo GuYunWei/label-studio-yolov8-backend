@@ -6,7 +6,7 @@ VERSION=latest
 # Build Docker images
 build-yolov8:
 	@echo "Building web Docker image: $(YOLO_IMAGE):$(VERSION)..."
-	docker build -t $(YOLO_IMAGE):$(VERSION) ./web
+	docker build -t $(YOLO_IMAGE):$(VERSION) .
 	@echo "Web Docker image built successfully: $(YOLO_IMAGE):$(VERSION)"
 
 # Push Docker images
